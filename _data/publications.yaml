@@ -3,7 +3,7 @@ papers:
   - title: "Multi-Modal Sentiment Analysis Using Text and Audio for Customer Support Centers"
     authors: "<b>Hardik Srivastava</b>, Sneha Sunil, K. Shantha Kumari, P. Kanmani"
     venue: "ICACTCE'23: International Conference on Advances in Communication Technology and Computer Engineering"
-    paper_pdf: "/assets/publications/AUPlus.pdf"
+    paper_pdf: "/assets/publications/MMSA_Paper_Springer_Nature_10_Final.pdf"
     code: "https://github.com/thisishardik/cmbert-sentiment-analysis"
     selected: y
 
