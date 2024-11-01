@@ -261,43 +261,6 @@ title: Home
 
 </div> 
 
-<!-- <div class="docs-section" id="projects">
-  <h4>Projects</h4>
-
-  <div class="tab-content">
-    <div class="tab-pane active" id="posts-selected">
-      {% for project in site.data.projects.projects %}
-        {% assign index_modulo = forloop.index0 | modulo:3 %}
-        {% if index_modulo == 0 %}
-          <div class="row">
-        {% endif %}
-
-          <div class="four columns">
-            <div class="post-container">
-
-                <div class="post-image-container">
-                  <a href="{{ project.url }}">
-                    <img src="{{ project.thumbnail }}" class="u-max-full-width" />
-                  </a>
-                </div>
-
-                <div class="post-caption">
-                  <b>{{ project.title }}</b> <br/>
-                  {{ project.subtitle }}
-                </div>
-
-            </div>
-          </div>
-
-        {% if index_modulo == 2 %}
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
-  </div>
-
-</div> -->
-
 <!-- ========== ARTICLES ========== -->
 <div class="docs-section" id="posts">
   <h4>Articles</h4>

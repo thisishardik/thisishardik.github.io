@@ -4,4 +4,4 @@ ToDo.todo
 README.md
 .jekyll-cache
 _site/*
-_data/google_analytics_config.yaml
+_data/google_analytics.yaml
