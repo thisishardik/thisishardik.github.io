@@ -1,0 +1,48 @@
+experiences:
+  - place: "JPMorgan Chase & Co."
+    time: "June 2023 - Present"
+    title: "Applied Scientist"
+    subtitle: "Fraud Intelligence and Probalistic Reasoning"
+    category: "work"
+
+  - place: "McGill University"
+    time: "June-Sept 2022"
+    title: "Research Intern"
+    subtitle: "NLP/HCI at Accessible Computing Lab"
+    category: "work"
+
+  - place: "Samsung Electronics"
+    time: "Jan-June 2022"
+    title: "Machine Learning Engineer - Intern"
+    subtitle: "Samsung Bixby's search optimization using NLP modeling"
+    category: "work"
+
+  - place: "Inventuers"
+    time: "Sept-Nov 2023"
+    title: "Founder & Tech Lead"
+    subtitle: "Co-founded and released Curae, a platform \nto strealine healtcare services"
+    category: "work"
+
+  - place: "DRDO, Govt. of India"
+    time: "Aug-Nov 2021"
+    title: "Research Intern"
+    subtitle: "Video Stabalization and Denoising \nfor Long-Range Camera-feeds in Military Drones"
+    category: "work"
+
+  - place: "SoftSensor.ai"
+    time: "Apr-Oct 2021"
+    title: "Data Scientist Intern"
+    subtitle: "Pattern Recognition in Whole Slide Imaging (Lymphoma)"
+    category: "work"
+
+  - place: "SRM University"
+    time: "Jan-July 2021"
+    title: "Undergraduate Research Assistant"
+    subtitle: "Predictive Modeling for Diabetic Retinopathy detection"
+    category: "school"
+
+  - place: "SRM University"
+    time: "2019 - 2023"
+    title: "B.Tech Student"
+    subtitle: "Computer Science Engineering with a specialization in Big Data Analytics"
+    category: "school"

@@ -1,0 +1,16 @@
+
+award_info:
+  - title: "<a href='https://www.credly.com/badges/e32b71de-6d5a-411f-8812-49e9a4612505/public_url'>AWS Certified Machine Learning Specialist Certification</a>"
+    year: "2023"
+
+  - title: "<a href='https://www.credly.com/badges/e32b71de-6d5a-411f-8812-49e9a4612505/public_url'>AWS Certified Cloud Practitioner Certification</a>"
+    year: "2023"
+
+  - title: "#1 out of 30+ projects for Protection Group Code prediction for Classified Data Columns  , JPMorgan Chase ScaleUP Challenge"
+    year: "2024"
+
+  - title: "#9 out of 300+ projects for Auto-Explainability and Evaluation of LLMs, JPMorgan Chase Global Hackathon"
+    year: "2023"
+  
+  - title: "2nd Prize, JPMC AWS DeepRacer (Regionals)"
+    year: "2023"

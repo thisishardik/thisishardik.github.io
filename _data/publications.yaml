@@ -1,0 +1,34 @@
+papers:
+
+  - title: "Multi-Modal Sentiment Analysis Using Text and Audio for Customer Support Centers"
+    authors: "<b>Hardik Srivastava</b>, Sneha Sunil, K. Shantha Kumari, P. Kanmani"
+    venue: "ICACTCE'23: International Conference on Advances in Communication Technology and Computer Engineering"
+    paper_pdf: "/assets/publications/AUPlus.pdf"
+    code: "https://github.com/thisishardik/cmbert-sentiment-analysis"
+    selected: y
+
+  - title: "Decision Support Complaint Prioritization System using a Statistical Multi-Method Algorithmic approach"
+    authors: "<b>Hardik Srivastava</b>, Mayank Jha, T. Karthick"
+    venue: "B.Tech Thesis, SRM 2023"
+    paper_pdf: "/assets/publications/DSCP_AIPCP_Paper_Final.pdf"
+    code: "https://github.com/thisishardik/user-complaint-categorization/tree/master"
+    selected: y
+
+  - title: "Neural Text Style Transfer with Custom Language Styles for Personalized Communication Systems"
+    authors: "<b>Hardik Srivastava</b>, Sneha Sunil, K. Shantha Kumari"
+    venue: "ICKECS'22: International Conference on Knowledge Engineering and Communication Systems"
+    paper_pdf: "/assets/publications/Neural_Text_Style_Transfer_with_Custom_Language_Styles_for_Personalized_Communication_Systems.pdf"
+    selected: y
+
+  - title: "Automatic Screening and Staging of Multi-Stage Diabetic Retinopathy using Deep Learning techniques"
+    authors: "<b>Hardik Srivastava</b>, T. Rajalakshmi"
+    venue: "Preprint"
+    paper_pdf: "/assets/papers/Diabetic_Retinopathy_Detection_Paper.pdf"
+    code: "https://github.com/thisishardik/diabetic-retinopathy-detection"
+    selected: y
+    
+  - title: "Using NLP Techniques for Enhancing Augmentative and Alternative Communication Applications"
+    authors: "Hardik Srivastava"
+    venue: "IJREAM'21: International Journal for Research in Engineering Application & Management"
+    paper_pdf: "/assets/papers/IJREAMV06I1070060.pdf"
+    selected: y

@@ -1,0 +1,24 @@
+projects:
+  - title: "Auto-Explainability and Evaluation of LLMs"
+    subtitle: "Enable interpretability and auto-evaluation of LLMs using Integrated Gradients"
+    thumbnail: "assets/posts/kube-article.webp"
+    url: "https://github.com/thisishardik/explain-llms/tree/main"
+    selected: y
+
+  - title: "AI-Powered Child-Labor Prevention Platform"
+    subtitle: "Statistical multi-method models to prioritize complaints by weighted-ranking"
+    thumbnail: "assets/posts/kube-article.webp"
+    url: "https://github.com/thisishardik/child-labor-tracking-system"
+    selected: y
+
+  - title: "No-Code Algo-Trading Portfolio Manager"
+    subtitle: "Using Hybrid Recommendation Models to minimize Risk and Shortfall in Algo-Trading"
+    thumbnail: "assets/posts/kube-article.webp"
+    url: ""
+    selected: y
+
+  - title: "Meta Kaggle Forum Posts Clustering"
+    subtitle: "Clustering Meta Kaggle forum posts for insigts using Heirarchical Clustering + Fine-tuned Word2Vec to include Kaggle-specifc OOV words"
+    thumbnail: "assets/posts/kube-article.webp"
+    url: "https://github.com/thisishardik/forum-posts-clustering"
+    selected: y

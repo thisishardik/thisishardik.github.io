@@ -1,0 +1,12 @@
+posts:
+  - title: "MLOps 101 — Machine Learning Workflow Orchestration using TensorFlow Extended"
+    subtitle: "Deploying Machine Learning workloads efficiently in Production using TFX"
+    thumbnail: "/assets/posts/tfx-pic.webp"
+    url: "https://medium.com/@hardy.lko/mlops-101-machine-learning-workflow-orchestration-in-production-using-tensorflow-extended-bddd4c0d17ea"
+    selected: y
+
+  - title: "A/B Testing in Data Science"
+    subtitle: "Learning how to let the customer do the talking, without actually talking."
+    thumbnail: "/assets/posts/abtest.webp"
+    url: "https://medium.com/data-science-community-srm/a-b-testing-in-data-science-ca36b60230ab"
+    selected: y
