@@ -227,8 +227,41 @@ title: Home
 </div>
 
 <!-- ========== PROJECTS ========== -->
- 
 <div class="docs-section" id="projects">
+  <h4>Projects</h4>
+  <div class="tab-pane" id="projects-all">
+    {% for project in site.data.projects.projects %}
+      {% assign index_modulo = forloop.index0 | modulo:3 %}
+      {% if index_modulo == 0 %}
+        <div class="row">
+      {% endif %}
+
+        <div class="four columns">
+          <div class="project-container">
+
+              <div class="project-image-container">
+                <a href="{{ project.url }}">
+                  <img src="{{ project.thumbnail }}" class="u-max-full-width" />
+                </a>
+              </div>
+
+              <div class="project-caption">
+                <b>{{ project.title }}</b> <br/>
+                {{ project.subtitle }}
+              </div>
+
+          </div>
+        </div>
+
+      {% if index_modulo == 2 %}
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+</div> 
+
+<!-- <div class="docs-section" id="projects">
   <h4>Projects</h4>
 
   <div class="tab-content">
@@ -263,51 +296,41 @@ title: Home
     </div>
   </div>
 
-</div>
-
+</div> -->
 
 <!-- ========== ARTICLES ========== -->
 <div class="docs-section" id="posts">
   <h4>Articles</h4>
+  <div class="tab-pane" id="projects-all">
+    {% assign selected_posts = site.data.posts.posts | where: "selected", "y" %}
+    {% for post in selected_posts %}
+      {% assign index_modulo = forloop.index0 | modulo:3 %}
+      {% if index_modulo == 0 %}
+        <div class="row">
+      {% endif %}
 
-  <!-- <ul class="tab-nav"> -->
-    <!-- <li><div class="button active" data-ref="#posts-selected">Published</div></li> -->
-    <!-- <li><div class="button" data-ref="#posts-all">All</div></li> -->
-  <!-- </ul> -->
+        <div class="four columns">
+          <div class="project-container">
+              <div class="project-image-container">
+                <a href="{{ post.url }}">
+                  <img src="{{ post.thumbnail }}" class="u-max-full-width" />
+                </a>
+              </div>
+              <div class="project-caption">
+                <b>{{ post.title }}</b> <br/>
+                {{ post.subtitle }}
+              </div>
 
-  <div class="tab-content">
-    <div class="tab-pane active" id="posts-selected">
-      {% assign selected_posts = site.data.posts.posts | where: "selected", "y" %}
-      {% for post in selected_posts %}
-        {% assign index_modulo = forloop.index0 | modulo:3 %}
-        {% if index_modulo == 0 %}
-          <div class="row">
-        {% endif %}
-
-          <div class="four columns">
-            <div class="post-container">
-
-                <div class="post-image-container">
-                  <a href="{{ post.url }}">
-                    <img src="{{ post.thumbnail }}" class="u-max-full-width" />
-                  </a>
-                </div>
-
-                <div class="post-caption">
-                  <b>{{ post.title }}</b> <br/>
-                  {{ post.subtitle }}
-                </div>
-            </div>
           </div>
+        </div>
 
-        {% if index_modulo == 2 %}
-          </div>
-        {% endif %}
-      {% endfor %}
-    </div>
+      {% if index_modulo == 2 %}
+        </div>
+      {% endif %}
+    {% endfor %}
   </div>
 
-</div>
+</div> 
 
 
 <!-- ========== RESUME ========== -->
@@ -332,7 +355,7 @@ title: Home
         </li>
         {% endfor %}
     </ul>
-  </div>
+</div>
 
 <!-- ========== ACKNOWLEDGEMENTS ========== -->
 <div class="docs-section" id="ack">
