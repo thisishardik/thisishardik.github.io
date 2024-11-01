@@ -1,6 +1,7 @@
 source:      .
 destination: ./_site
 includes:    ./_includes
+ga_tracking_id: <GA_TRACKING_ID>
 
 collections:
   projects:
