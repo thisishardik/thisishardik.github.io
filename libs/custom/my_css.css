@@ -37,11 +37,15 @@ h4 {
   border-top: 1px solid #eee;
   padding: 4rem 0;
   margin-bottom: 0;}
+  .docs-section-last {
+    border-top: 1px solid #eee;
+    padding: 4rem 0 0 0;
+    margin-bottom: 0;}  
 .footer {
   text-align: center;
   color: rgba(0, 0, 0, 0.4);
   border-top: 1px solid #eee;
-  padding: 15px 0 40px 0;
+  padding: 15px 0 15px 0;
   margin-bottom: 0;}
 .navbar {
   display: none; }
