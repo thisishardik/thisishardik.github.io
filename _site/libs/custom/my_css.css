@@ -42,10 +42,11 @@ h4 {
     padding: 4rem 0 0 0;
     margin-bottom: 0;}  
 .footer {
+  background-color: rgb(245, 247, 250);
   text-align: center;
   color: rgba(0, 0, 0, 0.4);
   border-top: 1px solid #eee;
-  padding: 15px 0 15px 0;
+  padding: 35px 0 15px 0;
   margin-bottom: 0;}
 .navbar {
   display: none; }
