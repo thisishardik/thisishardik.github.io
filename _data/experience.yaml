@@ -1,11 +1,17 @@
 experiences:
-  - place: "JPMorgan Chase & Co."
-    time: "June 2023 - Present"
+  - place: "JPMorgan Chase"
+    time: "May 2025 - Present"
+    title: "Applied Scientist II"
+    subtitle: "Fraud Prevention, Graph ML and Contrastive Pre-Training"
+    category: "work"
+
+  - place: "JPMorgan Chase"
+    time: "June 2023 - May 2025"
     title: "Applied Scientist"
     subtitle: "Fraud Intelligence and Probalistic Reasoning"
     category: "work"
 
-  - place: "JPMorgan Chase & Co."
+  - place: "JPMorgan Chase."
     time: "Feb-June 2023"
     title: "Software Engineer Intern - AI/ML"
     subtitle: "Search Software and Semi-Supervised Ranking"
@@ -20,7 +26,7 @@ experiences:
   - place: "Samsung Electronics"
     time: "Jan-June 2022"
     title: "Machine Learning Engineer - Intern"
-    subtitle: "Samsung Bixby's search optimization using NLP modeling"
+    subtitle: "Samsung Bixby's search optimization using Quantization-Aware Training"
     category: "work"
 
   - place: "Inventuers"
