@@ -1,17 +1,15 @@
 news:
-  - title: "Secured the 1st Place at JPMC ScaleUP Challenge 2024 for <i>Protection Group Code Prediction for Classified Data Columns using Multi-Head Attention and Transformers</i>"
+  - title: "Secured the 1st Place at JPMC ScaleUP Challenge 2024 for <i>Protection Group Code Prediction for Classified Data Columns using BERT-based Active Learning</i>"
     date: "09/2024"
   - title: "Delivered a session on how we leverage Hybrid Recommendation models for minimizing risk in my Algo-Trading Platform based solution at JPMorgan's Innovation Week 2024"
     date: "08/2024"
   - title: "Cleared the <a href='https://www.credly.com/badges/6e32e8f2-282f-4920-9d72-d058b765db8c/public_url'>AWS Cloud Practitioner</a> and <a href='https://www.credly.com/badges/e32b71de-6d5a-411f-8812-49e9a4612505/public_url'>AWS Machine Learning Speciality</a> certifications"
     date: "11/2023"
-  - title: "Our paper <a href=https://www.researchgate.net/publication/374150807_Multi-Modal_Sentiment_Analysis_Using_Text_and_Audio_for_Customer_Support_Centers> Multi-Modal Sentiment Analysis Using Text and Audio for Customer Support Centers
-</a> has been accepted by <b>ICACTCE</b> 2023."
+  - title: "Our paper <a href=https://www.researchgate.net/publication/374150807_Multi-Modal_Sentiment_Analysis_Using_Text_and_Audio_for_Customer_Support_Centers> Multi-Modal Sentiment Analysis Using Text and Audio for Customer Support Centers </a> has been accepted by <b>ICACTCE</b> 2023."
     date: "09/2023"
   - title: "I am starting a new position as Applied Scientist at JPMorgan Chase."
     date: "06/2023"
-  - title: "My B.Tech thesis <a href=https://www.researchgate.net/publication/378434538_Decision_Support_Complaint_Prioritization_System_using_a_Statistical_Multi-Method_Algorithmic_approach> Decision Support Complaint Prioritization System using a Statistical Multi-Method Algorithmic approach
-</a> has been accepted and the preprint is availble"
+  - title: "My B.Tech thesis <a href=https://www.researchgate.net/publication/378434538_Decision_Support_Complaint_Prioritization_System_using_a_Statistical_Multi-Method_Algorithmic_approach> Decision Support Complaint Prioritization System using a Statistical Multi-Method Algorithmic approach </a> has been accepted and the preprint is availble"
     date: "04/2023"
   - title: "Our paper <a href=https://www.researchgate.net/publication/369341625_Neural_Text_Style_Transfer_with_Custom_Language_Styles_for_Personalized_Communication_Systems> Neural Text Style Transfer with Custom Language Styles for Personalized Communication Systems</a> has been accepted to <b>ICKECS</b> 2023."
     date: "12/2022"
