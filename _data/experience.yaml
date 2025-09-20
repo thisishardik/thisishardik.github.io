@@ -1,4 +1,16 @@
 experiences:
+  - place: "University of Washington"
+    time: "September 2025 - Present"
+    title: "Graduate Research Associate"
+    subtitle: "Constrained Decoding and Lightweight Parameter-efficient Model Adaptation in LLMs"
+    category: "school"
+
+  - place: "University of Washington"
+    time: "September 2025 - Present"
+    title: "MS Student"
+    subtitle: "Masters in Data Science"
+    category: "school"
+
   - place: "JPMorgan Chase"
     time: "May 2025 - Present"
     title: "Applied Scientist II"
