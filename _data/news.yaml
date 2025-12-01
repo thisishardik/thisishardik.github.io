@@ -1,5 +1,7 @@
 news:
-  - title: "I am starting a new position as a <b>Graduate Research Associate</b> at UW under <b>Prof. Zaid Harchaoui</b>"
+  - title: "Secured <b>3rd place</b> at the UW x Databricks Hackathon 2025 held at Seattle, WA. We built <b>KeyCognition</b> - an ML system that <b>predicts cognitive load from keystroke dynamics</b> by using fine-grained keystroke features."
+    date: "11/2025"
+  - title: "I am starting a new position as a <b>Graduate Research Assistant</b> at UW under <b>Prof. Zaid Harchaoui</b>"
     date: "09/2025"
   - title: "I have joined the University of Washington at Seattle, WA as a Masters in Data Science student"
     date: "08/2025"

@@ -1,18 +1,24 @@
 projects:
+  - title: "KeyCognition - Predicting Cognitive Load using Keystrokes"
+    subtitle: "An AI system that predicts cognitive load purely from keystroke dynamics by using fine-grained keystroke features like dwell time, flight time, pauses, and error patterns in real-time."
+    thumbnail: "assets/posts/kube-article.webp"
+    url: "https://github.com/xsuryanshx/KeyCognition"
+    selected: y
+    
   - title: "Auto-Explainability and Evaluation of LLMs"
-    subtitle: "Enable interpretability and auto-evaluation of LLMs using Integrated Gradients"
+    subtitle: "Enabled interpretability and auto-evaluation of LLMs by developing a framework for Transformer Explainability that visualizes prediction attributions using Integrated Gradients"
     thumbnail: "assets/posts/kube-article.webp"
     url: "https://github.com/thisishardik/explain-llms/tree/main"
     selected: y
 
   - title: "AI-Powered Child-Labor Prevention Platform"
-    subtitle: "Statistical multi-method models to prioritize complaints by weighted-ranking"
+    subtitle: "Grievance redressal platform that leverages multi-method statistical models to re-rank grievances for efficient prioritization using weighted-ranking"
     thumbnail: "assets/posts/kube-article.webp"
     url: "https://github.com/thisishardik/child-labor-tracking-system"
     selected: y
 
   - title: "No-Code Algo-Trading Portfolio Manager"
-    subtitle: "Using Hybrid Recommendation Models to minimize Risk and Shortfall in Algo-Trading"
+    subtitle: "Platform to create/execute trades using a No-Code Drag-and-Drop UI. Powered by a Domain-specifc language framework that internally builds a trading algorithm powered by hybrid recommendation models to minimize the risk and shortfall for a specifc trade"
     thumbnail: "assets/posts/kube-article.webp"
     url: ""
     selected: y

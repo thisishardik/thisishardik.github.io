@@ -2,7 +2,7 @@ experiences:
   - place: "University of Washington"
     time: "September 2025 - Present"
     title: "Graduate Research Assistant"
-    subtitle: "Constrained Decoding and Lightweight Parameter-efficient Model Adaptation in LLMs"
+    subtitle: "Constrained Decoding and Lightweight Parameter-efficient Model Adaptation for Authorship Obfuscation in LLMs"
     category: "school"
 
   - place: "University of Washington"
