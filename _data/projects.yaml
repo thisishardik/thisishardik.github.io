@@ -1,30 +1,36 @@
 projects:
-  - title: "KeyCognition - Predicting Cognitive Load using Keystrokes"
-    subtitle: "An AI system that predicts cognitive load purely from keystroke dynamics by using fine-grained keystroke features like dwell time, flight time, pauses, and error patterns in real-time."
+  - title: "Ad-Astra: Agentic Ad Intelligence Engine"
+    subtitle: "Built a personalized ad generation and placement engine for X (Twitter), using Grok 4.1 Reasoning models for persona-aware ad copy generation. Utilized behavioral signals from scroll telemetry to optimize in-feed ad placement improving engagement and ad relevance."
+    thumbnail: "assets/posts/kube-article.webp"
+    url: "https://github.com/thisishardik/xai-ad-intelligence-engine"
+    selected: y
+
+  - title: "KeyCognition: Predicting Cognitive Load via Keystrokes"
+    subtitle: "A behavioral AI platform that predicts user cognitive load in real-time using temporal sequence modeling. Engineered a Python and React pipeline to extract micro-temporal typing anomalies like dwell time and flight time replicating the 136M keystrokes methodology."
     thumbnail: "assets/posts/kube-article.webp"
     url: "https://github.com/xsuryanshx/KeyCognition"
     selected: y
     
-  - title: "Auto-Explainability and Evaluation of LLMs"
-    subtitle: "Enabled interpretability and auto-evaluation of LLMs by developing a framework for Transformer Explainability that visualizes prediction attributions using Integrated Gradients"
+  - title: "Auto-Explainability & Evaluation of LLMs"
+    subtitle: "A Transformer explainability framework designed to demystify language model generation. Utilizes Integrated Gradients to map and visualize token-level prediction attributions, enabling deep interpretability and automated evaluation of model behavior."
     thumbnail: "assets/posts/kube-article.webp"
     url: "https://github.com/thisishardik/explain-llms/tree/main"
     selected: y
 
-  - title: "AI-Powered Child-Labor Prevention Platform"
-    subtitle: "Grievance redressal platform that leverages multi-method statistical models to re-rank grievances for efficient prioritization using weighted-ranking"
+  - title: "Predictive Grievance Redressal Platform"
+    subtitle: "A scalable resource-allocation system leveraging multi-method statistical modeling and weighted-ranking algorithms. Engineered to dynamically re-rank and prioritize critical, time-sensitive intervention cases."
     thumbnail: "assets/posts/kube-article.webp"
     url: "https://github.com/thisishardik/child-labor-tracking-system"
     selected: y
 
   - title: "No-Code Algo-Trading Portfolio Manager"
-    subtitle: "Platform to create/execute trades using a No-Code Drag-and-Drop UI. Powered by a Domain-specifc language framework that internally builds a trading algorithm powered by hybrid recommendation models to minimize the risk and shortfall for a specifc trade"
+    subtitle: "A Domain-Specific Language (DSL) framework powering a no-code trading platform. Leverages hybrid recommendation models to dynamically compile drag-and-drop user inputs into optimized algorithms, explicitly minimizing risk and execution shortfall."
     thumbnail: "assets/posts/kube-article.webp"
     url: ""
     selected: y
 
-  - title: "Meta Kaggle Forum Posts Clustering"
-    subtitle: "Clustering Meta Kaggle forum posts for insigts using Heirarchical Clustering + Fine-tuned Word2Vec to include Kaggle-specifc OOV words"
+  - title: "Hierarchical Clustering of Meta Kaggle"
+    subtitle: "An unsupervised NLP pipeline designed to extract latent insights from massive forum datasets. Implements Hierarchical Document Clustering powered by Word2Vec embeddings, specifically fine-tuned to capture domain-specific Out-Of-Vocabulary (OOV) terminology."
     thumbnail: "assets/posts/kube-article.webp"
     url: "https://github.com/thisishardik/forum-posts-clustering"
     selected: y

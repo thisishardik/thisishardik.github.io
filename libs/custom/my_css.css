@@ -332,3 +332,97 @@ ul.research-interests-list li {
   margin: 4px 0;
   line-height: 1.3;
 }
+
+/* ====================== RESPONSIVE NAVBAR (MOBILE) ====================== */
+@media (max-width: 750px) {
+
+  /* Show the navbar below the header */
+  .navbar {
+    display: block;                /* same as desktop */
+    overflow-x: auto;              /* allow horizontal scroll */
+    white-space: nowrap;           /* keep items in one line */
+    -webkit-overflow-scrolling: touch; /* smooth scroll on iOS */
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    background: #fff;
+    padding: 0.5rem 0;
+    position: relative;            /* normal flow, below name */
+  }
+
+  .navbar > .container {
+    width: 100%;                   /* full width container */
+  }
+
+  .navbar-list {
+    display: flex;
+    flex-wrap: nowrap;             /* keep items in single row */
+    margin: 0;
+    padding: 0 1rem;
+    list-style: none;
+  }
+
+  .navbar-item {
+    display: inline-block;
+    margin-right: 2rem;            /* spacing similar to desktop */
+  }
+
+  .navbar-link {
+    font-size: 11px;               /* same as desktop */
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    line-height: 1.8rem;
+    text-transform: uppercase;
+    color: #222;
+    text-decoration: none;         /* remove underline */
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  .navbar-link.active {
+    color: #33C3F0;
+  }
+
+  /* Hide scrollbar but keep scrollable */
+  .navbar::-webkit-scrollbar {
+    display: none;
+  }
+  .navbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* Prevent content from overlapping navbar */
+  .docs-section:first-of-type {
+    margin-top: 1rem; /* adjust slightly below navbar */
+  }
+}
+
+/* Make publication tabs scrollable on small screens */
+@media (max-width: 600px) {
+  .tab-nav {
+    display: flex;
+    flex-wrap: nowrap;      
+    overflow-x: auto;       
+    -webkit-overflow-scrolling: touch; 
+    padding-left: 0.5rem;   /* optional: small padding at start */
+  }
+
+  .tab-nav li {
+    flex: 0 0 auto;         
+    margin-right: 0.5rem;   /* spacing between tabs */
+  }
+
+  .tab-nav li:last-child {
+    margin-right: 0;        /* remove extra space at end */
+  }
+
+  .tab-nav li .button {
+    white-space: nowrap;    
+  }
+
+  /* Optional: hide scrollbar in webkit browsers */
+  .tab-nav::-webkit-scrollbar {
+    display: none;
+  }
+}
