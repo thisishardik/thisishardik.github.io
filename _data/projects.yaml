@@ -1,36 +1,36 @@
 projects:
   - title: "Ad-Astra: Agentic Ad Intelligence Engine"
-    subtitle: "Built a personalized ad generation and placement engine for X (Twitter), using Grok 4.1 Reasoning models for persona-aware ad copy generation. Utilized behavioral signals from scroll telemetry to optimize in-feed ad placement improving engagement and ad relevance."
+    subtitle: "Built a personalized ad generation and placement engine for X (Twitter), using Grok 4.1 Reasoning models. Utilized behavioral signals from scroll telemetry to optimize in-feed ad placement improving ad relevance."
     thumbnail: "assets/posts/kube-article.webp"
     url: "https://github.com/thisishardik/xai-ad-intelligence-engine"
     selected: y
 
   - title: "KeyCognition: Predicting Cognitive Load via Keystrokes"
-    subtitle: "A behavioral AI platform that predicts user cognitive load in real-time using temporal sequence modeling. Engineered a Python and React pipeline to extract micro-temporal typing anomalies like dwell time and flight time replicating the 136M keystrokes methodology."
+    subtitle: "A behavioral AI platform that predicts user cognitive load in real-time using temporal sequence modeling. Engineered a React app to extract micro-temporal typing anomalies like dwell time & flight time using 136M keystrokes."
     thumbnail: "assets/posts/kube-article.webp"
     url: "https://github.com/xsuryanshx/KeyCognition"
     selected: y
     
   - title: "Auto-Explainability & Evaluation of LLMs"
-    subtitle: "A Transformer explainability framework designed to demystify language model generation. Utilizes Integrated Gradients to map and visualize token-level prediction attributions, enabling deep interpretability and automated evaluation of model behavior."
+    subtitle: "A Transformer explainability framework designed to demystify language model generation. Utilizes Integrated Gradients to map and visualize token-level prediction attributions enabling deep interpretability."
     thumbnail: "assets/posts/kube-article.webp"
     url: "https://github.com/thisishardik/explain-llms/tree/main"
     selected: y
 
   - title: "Predictive Grievance Redressal Platform"
-    subtitle: "A scalable resource-allocation system leveraging multi-method statistical modeling and weighted-ranking algorithms. Engineered to dynamically re-rank and prioritize critical, time-sensitive intervention cases."
+    subtitle: "A scalable resource-allocation system leveraging multi-method statistical modeling and weighted-ranking algorithms. Engineered to dynamically re-rank and prioritize critical, time-sensitive decisions."
     thumbnail: "assets/posts/kube-article.webp"
     url: "https://github.com/thisishardik/child-labor-tracking-system"
     selected: y
 
   - title: "No-Code Algo-Trading Portfolio Manager"
-    subtitle: "A Domain-Specific Language (DSL) framework powering a no-code trading platform. Leverages hybrid recommendation models to dynamically compile drag-and-drop user inputs into optimized algorithms, explicitly minimizing risk and execution shortfall."
+    subtitle: "A Domain-Specific Language (DSL) framework powering a no-code trading platform. Leverages hybrid recommendation models to dynamically compile drag-and-drop user inputs into optimized algorithms, thereby minimizing risk and expected shortfall."
     thumbnail: "assets/posts/kube-article.webp"
     url: ""
     selected: y
 
   - title: "Hierarchical Clustering of Meta Kaggle"
-    subtitle: "An unsupervised NLP pipeline designed to extract latent insights from massive forum datasets. Implements Hierarchical Document Clustering powered by Word2Vec embeddings, specifically fine-tuned to capture domain-specific Out-Of-Vocabulary (OOV) terminology."
+    subtitle: "An unsupervised NLP pipeline designed to extract latent insights from massive forum datasets. Implements Hierarchical Document Clustering to capture domain-specific Out-Of-Vocabulary terminology."
     thumbnail: "assets/posts/kube-article.webp"
     url: "https://github.com/thisishardik/forum-posts-clustering"
     selected: y
