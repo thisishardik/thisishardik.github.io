@@ -2,7 +2,7 @@ papers:
 
   - title: "Multi-Modal Sentiment Analysis Using Text and Audio for Customer Support Centers"
     authors: "<b>Hardik Srivastava</b>, Sneha Sunil, K. Shantha Kumari, P. Kanmani"
-    venue: "ICACTCE'23: International Conference on Advances in Communication Technology and Computer Engineering (IEEE)"
+    venue: "ICACTCE'23: International Conference on Advances in Communication Technology and Computer Engineering (Springer)"
     impact: "Proposed CM-BERT, a novel multimodal sentiment analysis model that fuses textual and audio features to robustly capture customer sentiment"
     paper_pdf: "/assets/publications/MMSA_Paper_Springer_Nature_10_Final.pdf"
     code: "https://github.com/thisishardik/cmbert-sentiment-analysis"
@@ -11,7 +11,7 @@ papers:
 
   - title: "Neural Text Style Transfer with Custom Language Styles for Personalized Communication Systems"
     authors: "<b>Hardik Srivastava</b>, Sneha Sunil, K. Shantha Kumari"
-    venue: "ICKECS'22: International Conference on Knowledge Engineering and Communication Systems (Springer)"
+    venue: "ICKECS'22: International Conference on Knowledge Engineering and Communication Systems (IEEE)"
     impact: "Introduced StyleLM, a style-conditioned neural text transfer model enabling fine-grained control over language style for personalized communication."
     paper_pdf: "assets/publications/Neural_Text_Style_Transfer_with_Custom_Language_Styles_for_Personalized_Communication_Systems.pdf"
     code: "https://github.com/thisishardik/text-style-transfer"
@@ -20,7 +20,7 @@ papers:
 
   - title: "Using NLP Techniques for Enhancing Augmentative and Alternative Communication Applications"
     authors: "<b>Hardik Srivastava</b>"
-    venue: "IJREAM'21: International Journal for Research in Engineering Application & Management"
+    venue: "IJREAM'21: International Journal for Research in Engineering Application & Management (UGC)"
     impact: "NLP-based framework to enhance AAC applications, enabling dynamic vocabulary expansion and more expressive sentence generation."
     paper_pdf: "/assets/publications/IJREAMV06I1070060.pdf"
     type: "journal"
@@ -37,7 +37,7 @@ papers:
 
   - title: "Automatic Screening and Staging of Multi-Stage Diabetic Retinopathy using Deep Learning techniques"
     authors: "<b>Hardik Srivastava</b>, T. Rajalakshmi"
-    venue: "Preprint 2026"
+    venue: "Preprint 2022"
     impact: "Proposed a deep learning framework for automated detection and staging of multi-stage diabetic retinopathy."
     paper_pdf: "/assets/publications/Diabetic_Retinopathy_Detection_Paper.pdf"
     type: "preprint"
