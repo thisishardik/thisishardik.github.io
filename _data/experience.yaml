@@ -20,13 +20,13 @@ experiences:
   - place: "JPMorgan Chase"
     time: "June 2023 - May 2025"
     title: "Applied Scientist"
-    subtitle: "Fraud Intelligence and Probalistic Reasoning"
+    subtitle: "Fraud Intelligence and Representaion Learning"
     category: "work"
 
   - place: "JPMorgan Chase."
     time: "Feb - June 2023"
     title: "Software Engineer Intern - AI/ML"
-    subtitle: "Search Software and Semi-Supervised Ranking"
+    subtitle: "Elastic Search and Semi-Supervised Ranking"
     category: "work"
 
   - place: "McGill University"
@@ -44,13 +44,13 @@ experiences:
   - place: "Inventuers"
     time: "Sept - Nov 2023"
     title: "Founder & Tech Lead"
-    subtitle: "Co-founded and released Curae, a platform \nto strealine healtcare services"
+    subtitle: "Co-founded and released Curae, a platform \nto streamline healthcare services"
     category: "work"
 
   - place: "DRDO, Govt. of India"
     time: "Aug - Nov 2021"
     title: "Research Intern"
-    subtitle: "Video Stabalization and Denoising \nfor Long-Range Camera-feeds in Military Drones"
+    subtitle: "Video Stabilization and Denoising \nfor Long-Range Camera-feeds in Military Drones"
     category: "work"
 
   - place: "SoftSensor.ai"
