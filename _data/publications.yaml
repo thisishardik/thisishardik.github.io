@@ -1,44 +1,53 @@
 papers:
-
   - title: "Multi-Modal Sentiment Analysis Using Text and Audio for Customer Support Centers"
-    authors: "<b>Hardik Srivastava</b>, Sneha Sunil, K. Shantha Kumari, P. Kanmani"
-    venue: "ICACTCE'23: International Conference on Advances in Communication Technology and Computer Engineering (Springer)"
-    impact: "Proposed CM-BERT, a novel multimodal sentiment analysis model that fuses textual and audio features to robustly capture customer sentiment"
+    authors: "<u><b>Hardik Srivastava</b></u>, Sneha Sunil, K. Shantha Kumari, P. Kanmani"
+    year: 2023
+    venue: "ICACTCE: International Conference on Advances in Communication Technology and Computer Engineering (Springer)"
+    impact: "Proposed <b>CM-BERT</b>, a novel multimodal sentiment analysis model that fuses textual and audio features to robustly capture customer sentiment"
     paper_pdf: "/assets/publications/MMSA_Paper_Springer_Nature_10_Final.pdf"
     code: "https://github.com/thisishardik/cmbert-sentiment-analysis"
     type: "conference"
-    selected: y
-
-  - title: "Neural Text Style Transfer with Custom Language Styles for Personalized Communication Systems"
-    authors: "<b>Hardik Srivastava</b>, Sneha Sunil, K. Shantha Kumari"
-    venue: "ICKECS'22: International Conference on Knowledge Engineering and Communication Systems (IEEE)"
-    impact: "Introduced StyleLM, a style-conditioned neural text transfer model enabling fine-grained control over language style for personalized communication."
-    paper_pdf: "assets/publications/Neural_Text_Style_Transfer_with_Custom_Language_Styles_for_Personalized_Communication_Systems.pdf"
-    code: "https://github.com/thisishardik/text-style-transfer"
-    type: "conference"
-    selected: y
-
-  - title: "Using NLP Techniques for Enhancing Augmentative and Alternative Communication Applications"
-    authors: "<b>Hardik Srivastava</b>"
-    venue: "IJREAM'21: International Journal for Research in Engineering Application & Management (UGC)"
-    impact: "NLP-based framework to enhance AAC applications, enabling dynamic vocabulary expansion and more expressive sentence generation."
-    paper_pdf: "/assets/publications/IJREAMV06I1070060.pdf"
-    type: "journal"
+    arch_diagram: "/assets/publications/diagrams/archi-diag.drawio.png"
     selected: y
 
   - title: "Decision Support Complaint Prioritization System using a Statistical Multi-Method Algorithmic approach"
-    authors: "<b>Hardik Srivastava</b>, Mayank Jha, T. Karthick"
-    venue: "B.Tech Thesis, SRM 2023"
+    authors: "<u><b>Hardik Srivastava</b></u>, Mayank Jha, T. Karthick"
+    year: 2023
+    venue: "Undergraduate Thesis"
     impact: "Proposed a statistical multi-method framework combining rule-based scoring and algorithmic ranking to integrate diverse decision signals into a coherent prioritization score for efficient re-ranking."
     paper_pdf: "/assets/publications/DSCP_AIPCP_Paper_Final.pdf"
     code: "https://github.com/thisishardik/user-complaint-categorization/tree/master"
     type: "thesis"
+    arch_diagram: "/assets/publications/diagrams/model_dscp_paper.png"
+    selected: y
+
+  - title: "Neural Text Style Transfer with Custom Language Styles for Personalized Communication Systems"
+    authors: "<u><b>Hardik Srivastava</b></u>, Sneha Sunil, K. Shantha Kumari"
+    year: 2022
+    venue: "ICKECS'22: International Conference on Knowledge Engineering and Communication Systems (IEEE)"
+    impact: "Introduced <b>StyleLM</b>, a style-conditioned neural text transfer model enabling fine-grained control over language style for personalized communication."
+    paper_pdf: "assets/publications/Neural_Text_Style_Transfer_with_Custom_Language_Styles_for_Personalized_Communication_Systems.pdf"
+    code: "https://github.com/thisishardik/text-style-transfer"
+    type: "conference"
+    arch_diagram: "/assets/publications/diagrams/architecture.png"
     selected: y
 
   - title: "Automatic Screening and Staging of Multi-Stage Diabetic Retinopathy using Deep Learning techniques"
-    authors: "<b>Hardik Srivastava</b>, T. Rajalakshmi"
-    venue: "Preprint 2022"
+    authors: "<u><b>Hardik Srivastava</b></u>, T. Rajalakshmi"
+    year: 2022
+    venue: "Preprint"
     impact: "Proposed a deep learning framework for automated detection and staging of multi-stage diabetic retinopathy."
     paper_pdf: "/assets/publications/Diabetic_Retinopathy_Detection_Paper.pdf"
     type: "preprint"
+    arch_diagram: "/assets/publications/diagrams/drd.jpg"
+    selected: y
+
+  - title: "Using NLP Techniques for Enhancing Augmentative and Alternative Communication Applications"
+    authors: "<u><b>Hardik Srivastava</b></u>"
+    year: 2021
+    venue: "IJREAM: International Journal for Research in Engineering Application & Management (UGC)"
+    impact: "NLP-based framework to enhance AAC applications, enabling dynamic vocabulary expansion and more expressive sentence generation."
+    paper_pdf: "/assets/publications/IJREAMV06I1070060.pdf"
+    type: "journal"
+    arch_diagram: "/assets/publications/diagrams/nlp_for_aac.jpeg"
     selected: y

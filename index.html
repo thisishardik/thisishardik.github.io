@@ -7,13 +7,11 @@ title: Home
 <div class="docs-section" id="about">
   <h4>About</h4>
   <p align="justify">
-    I am a <b>Masters in Data Science</b> student at the <b>University of Washington</b> and a Graduate Research Assistant at the Paul G. Allen School of Computer Science & Engineering, advised by <b>Prof. Zaid Harchaoui</b>. My current research sits at the intersection of <b>Generative AI, privacy, and controllability</b>. I'm working on the mechanics of <b>style-aware text rewriting</b> and </b>stylistic perturbation</b> for </b>authorship obfuscation</b>. My work focuses on developing controllable <b>multi-agent Transformer-based systems</b> using <b>attribution-guided modeling</b> to isolate specific linguistic features in text. This involves training lightweight, parameter-efficient adapters (LoRA) to capture distinct stylistic dimensions, and applying <b>constrained decoding</b> algorithms at inference time to <b>steer LLM generation</b>, under strict privacy-fidelity constraints. I also focus on <b>optimizing LLM inference</b>, specifically <b>architecting multi-agent architectures</b> that maintain robust performance and low latency at enterprise scale.
+    I am a <b>Masters in Data Science</b> student at the <b>University of Washington</b> and a Graduate Research Assistant at the Paul G. Allen School of Computer Science & Engineering, advised by <b>Prof. Zaid Harchaoui</b>. My current research focuses on <b>LLM Interpretabiliy, optimizing alignment and privacy-preserving AI</b>. I'm working on the mechanics of <b>style-aware text rewriting</b> and </b>stylistic perturbation</b> for </b>authorship obfuscation</b>. My work focuses on developing controllable <b>multi-agent Transformer-based systems</b> using <b>attribution-guided modeling</b> to isolate specific linguistic features in text. This involves training lightweight, parameter-efficient adapters (LoRA) to capture distinct stylistic dimensions, and applying <b>constrained decoding</b> algorithms at inference time to <b>steer LLM generation</b>, under strict privacy-fidelity constraints. I also focus on <b>optimizing LLM inference</b>, specifically <b>architecting multi-agent architectures</b> that maintain robust performance and low latency at enterprise scale.
     <br><br>
-    Prior to UW, I spent over two years as an <b>Applied Scientist</b> at <b>JPMorgan Chase</b>, where I led applied research and deployment of Gradient Boosting and Semi-Supervised Graph ML models within the Payments Fraud Prevention team. By capturing complex anomalies in transactional networks, I engineered solutions that prevented over <b>$220M in fraud annually</b>. 
+    Prior to UW, I spent over two years as an <b>Applied Scientist</b> at <b>JPMorgan Chase</b>, where I led applied research and deployment of Gradient Boosting and Semi-Supervised Graph ML models within the Payments Fraud Prevention team. By capturing complex anomalies in transactional networks, I engineered solutions that prevented over <b>$220M in fraud annually</b>. My work spanned architecting <b>Named Entity Recognition systems for Address verification</b>, <b>Entity Resolution (Record Linkage) models for Sanctions Screening</b>, and <b>Learning-to-Rank models for resource-efficient KYC systems</b>—leveraging tools like Spark, MLflow/MLServing, Kubernetes and AWS to productionize these pipelines at massive scale.
     <br><br>
-    My work spanned architecting <b>Named Entity Recognition systems for Address verification</b>, <b>Entity Resolution (Record Linkage) models for Sanctions Screening</b>, and <b>Learning-to-Rank models for resource-efficient KYC systems</b>—leveraging tools like Spark, MLflow/MLServing, Kubernetes and AWS to productionize these pipelines at massive scale. Furthermore, I designed and productionized multi-modal Fraud pipelines using <b>Contrastively Pre-Trained Transformers (ViT Encoders & BERT-based decoders)</b> for <b>OCR-based Check Fraud prevention</b>.      
-    <br><br>
-    I thrive on the deep engineering challenges of machine learning. My foundational research experience includes shipping word-sense disambiguation models while matching <b>FP32 performance</b> with <b>INT8 quantization</b> for the <b>Samsung Bixby assistant</b> in production at Samsung Research, and conducting research in <b>Human-Centered AI and multimodal NLP</b> at the <a href="https://act-lab.github.io/index.html#header" target="_blank">Accessible Computing Lab (ACT)</a> at McGill University. 
+    My foundational research experience at <b>Samsung Research</b> includes shipping an optimized <b>NLU Intent Routing system</b> into production for <b>Samsung Bixby assistant</b> along with deploying latency-aware <b>INT8 quantization</b> for word-sense disambiguation models, matching <b>FP32 performance</b> via <b>Quantization-Aware Training</b>. I also conducted research in <b>Human-Centered AI and multimodal NLP</b> at the <a href="https://act-lab.github.io/index.html#header" target="_blank">Accessible Computing Lab (ACT)</a> at McGill University.
   </p>
     <p align="justify">
       I am passionate about building AI systems that are <b>rigorous, reproducible, and grounded in theory</b>, while being explicitly engineered for deployment at enterprise scale. 
@@ -197,31 +195,38 @@ title: Home
       {% assign selected_papers = site.data.publications.papers | where: "selected", "y" %}
       {% for paper in selected_papers %}
         <div class="paper">
-          <p class="title"><b>{{ paper.title }}</b></p>
-          <p>{{ paper.authors }}</p>
-          <p><i>{{ paper.venue }}</i></p>
-          {% if paper.impact %}
-            <p class="impact">{{ paper.impact }}</p>
+          {% if paper.arch_diagram %}
+            <div class="paper-diagram">
+              <img src="{{ paper.arch_diagram | prepend: site.baseurl }}" alt="Architecture Diagram" class="diagram-image">
+            </div>
           {% endif %}
-          <div class="paper-buttons">
-            {% if paper.paper_pdf %}
-              <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
+          <div class="paper-content">
+            <p class="title"><b>{{ paper.title }}</b></p>
+            <p>{{ paper.authors }}</p>
+            <p><i>{{ paper.venue }}</i>{% if paper.year %} <span class="year">({{ paper.year }})</span>{% endif %}</p>
+            {% if paper.impact %}
+              <p class="impact">{{ paper.impact }}</p>
             {% endif %}
-            {% if paper.code %}
-              <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
-            {% endif %}
-            {% if paper.slides %}
-              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
-            {% endif %}
-            {% if paper.poster %}
-              <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
-            {% endif %}
-            {% if paper.video %}
-              <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
-            {% endif %}
-            {% if paper.data %}
-              <a class="button" href="{{ paper.data }}" target="_blank">Data</a>
-            {% endif %}
+            <div class="paper-buttons">
+              {% if paper.paper_pdf %}
+                <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
+              {% endif %}
+              {% if paper.code %}
+                <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
+              {% endif %}
+              {% if paper.slides %}
+                <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
+              {% endif %}
+              {% if paper.poster %}
+                <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
+              {% endif %}
+              {% if paper.video %}
+                <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
+              {% endif %}
+              {% if paper.data %}
+                <a class="button" href="{{ paper.data }}" target="_blank">Data</a>
+              {% endif %}
+            </div>
           </div>
         </div>
       {% endfor %}
@@ -232,19 +237,26 @@ title: Home
       {% assign conf_papers = site.data.publications.papers | where: "type", "conference" %}
       {% for paper in conf_papers %}
         <div class="paper">
-          <p class="title"><b>{{ paper.title }}</b></p>
-          <p>{{ paper.authors }}</p>
-          <p><i>{{ paper.venue }}</i></p>
-          {% if paper.impact %}
-            <p class="impact">{{ paper.impact }}</p>
+          {% if paper.arch_diagram %}
+            <div class="paper-diagram">
+              <img src="{{ paper.arch_diagram | prepend: site.baseurl }}" alt="Architecture Diagram" class="diagram-image">
+            </div>
           {% endif %}
-          <div class="paper-buttons">
-            {% if paper.paper_pdf %}
-              <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
+          <div class="paper-content">
+            <p class="title"><b>{{ paper.title }}</b></p>
+            <p>{{ paper.authors }}</p>
+            <p><i>{{ paper.venue }}</i>{% if paper.year %} <span class="year">({{ paper.year }})</span>{% endif %}</p>
+            {% if paper.impact %}
+              <p class="impact">{{ paper.impact }}</p>
             {% endif %}
-            {% if paper.code %}
-              <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
-            {% endif %}
+            <div class="paper-buttons">
+              {% if paper.paper_pdf %}
+                <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
+              {% endif %}
+              {% if paper.code %}
+                <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
+              {% endif %}
+            </div>
           </div>
         </div>
       {% endfor %}
@@ -255,16 +267,23 @@ title: Home
       {% assign journal_papers = site.data.publications.papers | where: "type", "journal" %}
       {% for paper in journal_papers %}
         <div class="paper">
-          <p class="title"><b>{{ paper.title }}</b></p>
-          <p>{{ paper.authors }}</p>
-          <p><i>{{ paper.venue }}</i></p>
-          {% if paper.impact %}
-            <p class="impact">{{ paper.impact }}</p>
+          {% if paper.arch_diagram %}
+            <div class="paper-diagram">
+              <img src="{{ paper.arch_diagram | prepend: site.baseurl }}" alt="Architecture Diagram" class="diagram-image">
+            </div>
           {% endif %}
-          <div class="paper-buttons">
-            {% if paper.paper_pdf %}
-              <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
+          <div class="paper-content">
+            <p class="title"><b>{{ paper.title }}</b></p>
+            <p>{{ paper.authors }}</p>
+            <p><i>{{ paper.venue }}</i>{% if paper.year %} <span class="year">({{ paper.year }})</span>{% endif %}</p>
+            {% if paper.impact %}
+              <p class="impact">{{ paper.impact }}</p>
             {% endif %}
+            <div class="paper-buttons">
+              {% if paper.paper_pdf %}
+                <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
+              {% endif %}
+            </div>
           </div>
         </div>
       {% endfor %}
@@ -275,19 +294,26 @@ title: Home
       {% assign thesis_papers = site.data.publications.papers | where: "type", "thesis" %}
       {% for paper in thesis_papers %}
         <div class="paper">
-          <p class="title"><b>{{ paper.title }}</b></p>
-          <p>{{ paper.authors }}</p>
-          <p><i>{{ paper.venue }}</i></p>
-          {% if paper.impact %}
-            <p class="impact">{{ paper.impact }}</p>
+          {% if paper.arch_diagram %}
+            <div class="paper-diagram">
+              <img src="{{ paper.arch_diagram | prepend: site.baseurl }}" alt="Architecture Diagram" class="diagram-image">
+            </div>
           {% endif %}
-          <div class="paper-buttons">
-            {% if paper.paper_pdf %}
-              <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
+          <div class="paper-content">
+            <p class="title"><b>{{ paper.title }}</b></p>
+            <p>{{ paper.authors }}</p>
+            <p><i>{{ paper.venue }}</i>{% if paper.year %} <span class="year">({{ paper.year }})</span>{% endif %}</p>
+            {% if paper.impact %}
+              <p class="impact">{{ paper.impact }}</p>
             {% endif %}
-            {% if paper.code %}
-              <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
-            {% endif %}
+            <div class="paper-buttons">
+              {% if paper.paper_pdf %}
+                <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
+              {% endif %}
+              {% if paper.code %}
+                <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
+              {% endif %}
+            </div>
           </div>
         </div>
       {% endfor %}
@@ -298,16 +324,23 @@ title: Home
       {% assign preprint_papers = site.data.publications.papers | where: "type", "preprint" %}
       {% for paper in preprint_papers %}
         <div class="paper">
-          <p class="title"><b>{{ paper.title }}</b></p>
-          <p>{{ paper.authors }}</p>
-          <p><i>{{ paper.venue }}</i></p>
-          {% if paper.impact %}
-            <p class="impact">{{ paper.impact }}</p>
+          {% if paper.arch_diagram %}
+            <div class="paper-diagram">
+              <img src="{{ paper.arch_diagram | prepend: site.baseurl }}" alt="Architecture Diagram" class="diagram-image">
+            </div>
           {% endif %}
-          <div class="paper-buttons">
-            {% if paper.paper_pdf %}
-              <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Preprint</a>
+          <div class="paper-content">
+            <p class="title"><b>{{ paper.title }}</b></p>
+            <p>{{ paper.authors }}</p>
+            <p><i>{{ paper.venue }}</i>{% if paper.year %} <span class="year">({{ paper.year }})</span>{% endif %}</p>
+            {% if paper.impact %}
+              <p class="impact">{{ paper.impact }}</p>
             {% endif %}
+            <div class="paper-buttons">
+              {% if paper.paper_pdf %}
+                <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Preprint</a>
+              {% endif %}
+            </div>
           </div>
         </div>
       {% endfor %}
@@ -318,31 +351,38 @@ title: Home
       {% assign all_papers = site.data.publications.papers | sort: "year" | reverse %}
       {% for paper in all_papers %}
         <div class="paper">
-          <p class="title"><b>{{ paper.title }}</b></p>
-          <p>{{ paper.authors }}</p>
-          <p><i>{{ paper.venue }}</i></p>
-          {% if paper.impact %}
-            <p class="impact">{{ paper.impact }}</p>
+          {% if paper.arch_diagram %}
+            <div class="paper-diagram">
+              <img src="{{ paper.arch_diagram | prepend: site.baseurl }}" alt="Architecture Diagram" class="diagram-image">
+            </div>
           {% endif %}
-          <div class="paper-buttons">
-            {% if paper.paper_pdf %}
-              <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
+          <div class="paper-content">
+            <p class="title"><b>{{ paper.title }}</b></p>
+            <p>{{ paper.authors }}</p>
+            <p><i>{{ paper.venue }}</i>{% if paper.year %} <span class="year">({{ paper.year }})</span>{% endif %}</p>
+            {% if paper.impact %}
+              <p class="impact">{{ paper.impact }}</p>
             {% endif %}
-            {% if paper.code %}
-              <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
-            {% endif %}
-            {% if paper.slides %}
-              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
-            {% endif %}
-            {% if paper.poster %}
-              <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
-            {% endif %}
-            {% if paper.video %}
-              <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
-            {% endif %}
-            {% if paper.data %}
-              <a class="button" href="{{ paper.data }}" target="_blank">Data</a>
-            {% endif %}
+            <div class="paper-buttons">
+              {% if paper.paper_pdf %}
+                <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
+              {% endif %}
+              {% if paper.code %}
+                <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
+              {% endif %}
+              {% if paper.slides %}
+                <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
+              {% endif %}
+              {% if paper.poster %}
+                <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
+              {% endif %}
+              {% if paper.video %}
+                <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
+              {% endif %}
+              {% if paper.data %}
+                <a class="button" href="{{ paper.data }}" target="_blank">Data</a>
+              {% endif %}
+            </div>
           </div>
         </div>
       {% endfor %}

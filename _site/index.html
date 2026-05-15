@@ -148,13 +148,11 @@
 <div class="docs-section" id="about">
   <h4>About</h4>
   <p align="justify">
-    I am a <b>Masters in Data Science</b> student at the <b>University of Washington</b> and a Graduate Research Assistant at the Paul G. Allen School of Computer Science & Engineering, advised by <b>Prof. Zaid Harchaoui</b>. My current research sits at the intersection of <b>Generative AI, privacy, and controllability</b>. I'm working on the mechanics of <b>style-aware text rewriting</b> and </b>stylistic perturbation</b> for </b>authorship obfuscation</b>. My work focuses on developing controllable <b>multi-agent Transformer-based systems</b> using <b>attribution-guided modeling</b> to isolate specific linguistic features in text. This involves training lightweight, parameter-efficient adapters (LoRA) to capture distinct stylistic dimensions, and applying <b>constrained decoding</b> algorithms at inference time to <b>steer LLM generation</b>, under strict privacy-fidelity constraints. I also focus on <b>optimizing LLM inference</b>, specifically <b>architecting multi-agent architectures</b> that maintain robust performance and low latency at enterprise scale.
+    I am a <b>Masters in Data Science</b> student at the <b>University of Washington</b> and a Graduate Research Assistant at the Paul G. Allen School of Computer Science & Engineering, advised by <b>Prof. Zaid Harchaoui</b>. My current research focuses on <b>LLM Interpretabiliy, optimizing alignment and privacy-preserving AI</b>. I'm working on the mechanics of <b>style-aware text rewriting</b> and </b>stylistic perturbation</b> for </b>authorship obfuscation</b>. My work focuses on developing controllable <b>multi-agent Transformer-based systems</b> using <b>attribution-guided modeling</b> to isolate specific linguistic features in text. This involves training lightweight, parameter-efficient adapters (LoRA) to capture distinct stylistic dimensions, and applying <b>constrained decoding</b> algorithms at inference time to <b>steer LLM generation</b>, under strict privacy-fidelity constraints. I also focus on <b>optimizing LLM inference</b>, specifically <b>architecting multi-agent architectures</b> that maintain robust performance and low latency at enterprise scale.
     <br><br>
-    Prior to UW, I spent over two years as an <b>Applied Scientist</b> at <b>JPMorgan Chase</b>, where I led applied research and deployment of Gradient Boosting and Semi-Supervised Graph ML models within the Payments Fraud Prevention team. By capturing complex anomalies in transactional networks, I engineered solutions that prevented over <b>$220M in fraud annually</b>. 
+    Prior to UW, I spent over two years as an <b>Applied Scientist</b> at <b>JPMorgan Chase</b>, where I led applied research and deployment of Gradient Boosting and Semi-Supervised Graph ML models within the Payments Fraud Prevention team. By capturing complex anomalies in transactional networks, I engineered solutions that prevented over <b>$220M in fraud annually</b>. My work spanned architecting <b>Named Entity Recognition systems for Address verification</b>, <b>Entity Resolution (Record Linkage) models for Sanctions Screening</b>, and <b>Learning-to-Rank models for resource-efficient KYC systems</b>—leveraging tools like Spark, MLflow/MLServing, Kubernetes and AWS to productionize these pipelines at massive scale.
     <br><br>
-    My work spanned architecting <b>Named Entity Recognition systems for Address verification</b>, <b>Entity Resolution (Record Linkage) models for Sanctions Screening</b>, and <b>Learning-to-Rank models for resource-efficient KYC systems</b>—leveraging tools like Spark, MLflow/MLServing, Kubernetes and AWS to productionize these pipelines at massive scale. Furthermore, I designed and productionized multi-modal Fraud pipelines using <b>Contrastively Pre-Trained Transformers (ViT Encoders & BERT-based decoders)</b> for <b>OCR-based Check Fraud prevention</b>.      
-    <br><br>
-    I thrive on the deep engineering challenges of machine learning. My foundational research experience includes shipping word-sense disambiguation models while matching <b>FP32 performance</b> with <b>INT8 quantization</b> for the <b>Samsung Bixby assistant</b> in production at Samsung Research, and conducting research in <b>Human-Centered AI and multimodal NLP</b> at the <a href="https://act-lab.github.io/index.html#header" target="_blank">Accessible Computing Lab (ACT)</a> at McGill University. 
+    My foundational research experience at <b>Samsung Research</b> includes shipping an optimized <b>NLU Intent Routing system</b> into production for <b>Samsung Bixby assistant</b> along with deploying latency-aware <b>INT8 quantization</b> for word-sense disambiguation models, matching <b>FP32 performance</b> via <b>Quantization-Aware Training</b>. I also conducted research in <b>Human-Centered AI and multimodal NLP</b> at the <a href="https://act-lab.github.io/index.html#header" target="_blank">Accessible Computing Lab (ACT)</a> at McGill University.
   </p>
     <p align="justify">
       I am passionate about building AI systems that are <b>rigorous, reproducible, and grounded in theory</b>, while being explicitly engineered for deployment at enterprise scale. 
@@ -398,103 +396,138 @@
       
       
         <div class="paper">
-          <p class="title"><b>Multi-Modal Sentiment Analysis Using Text and Audio for Customer Support Centers</b></p>
-          <p><b>Hardik Srivastava</b>, Sneha Sunil, K. Shantha Kumari, P. Kanmani</p>
-          <p><i>ICACTCE'23: International Conference on Advances in Communication Technology and Computer Engineering (Springer)</i></p>
           
-            <p class="impact">Proposed CM-BERT, a novel multimodal sentiment analysis model that fuses textual and audio features to robustly capture customer sentiment</p>
+            <div class="paper-diagram">
+              <img src="/assets/publications/diagrams/archi-diag.drawio.png" alt="Architecture Diagram" class="diagram-image">
+            </div>
           
-          <div class="paper-buttons">
+          <div class="paper-content">
+            <p class="title"><b>Multi-Modal Sentiment Analysis Using Text and Audio for Customer Support Centers</b></p>
+            <p><u><b>Hardik Srivastava</b></u>, Sneha Sunil, K. Shantha Kumari, P. Kanmani</p>
+            <p><i>ICACTCE: International Conference on Advances in Communication Technology and Computer Engineering (Springer)</i> <span class="year">(2023)</span></p>
             
-              <a class="button" href="/assets/publications/MMSA_Paper_Springer_Nature_10_Final.pdf" target="_blank">Paper</a>
+              <p class="impact">Proposed <b>CM-BERT</b>, a novel multimodal sentiment analysis model that fuses textual and audio features to robustly capture customer sentiment</p>
             
-            
-              <a class="button" href="https://github.com/thisishardik/cmbert-sentiment-analysis" target="_blank">Code</a>
-            
-            
-            
-            
-            
+            <div class="paper-buttons">
+              
+                <a class="button" href="/assets/publications/MMSA_Paper_Springer_Nature_10_Final.pdf" target="_blank">Paper</a>
+              
+              
+                <a class="button" href="https://github.com/thisishardik/cmbert-sentiment-analysis" target="_blank">Code</a>
+              
+              
+              
+              
+              
+            </div>
           </div>
         </div>
       
         <div class="paper">
-          <p class="title"><b>Neural Text Style Transfer with Custom Language Styles for Personalized Communication Systems</b></p>
-          <p><b>Hardik Srivastava</b>, Sneha Sunil, K. Shantha Kumari</p>
-          <p><i>ICKECS'22: International Conference on Knowledge Engineering and Communication Systems (IEEE)</i></p>
           
-            <p class="impact">Introduced StyleLM, a style-conditioned neural text transfer model enabling fine-grained control over language style for personalized communication.</p>
+            <div class="paper-diagram">
+              <img src="/assets/publications/diagrams/model_dscp_paper.png" alt="Architecture Diagram" class="diagram-image">
+            </div>
           
-          <div class="paper-buttons">
+          <div class="paper-content">
+            <p class="title"><b>Decision Support Complaint Prioritization System using a Statistical Multi-Method Algorithmic approach</b></p>
+            <p><u><b>Hardik Srivastava</b></u>, Mayank Jha, T. Karthick</p>
+            <p><i>Undergraduate Thesis</i> <span class="year">(2023)</span></p>
             
-              <a class="button" href="assets/publications/Neural_Text_Style_Transfer_with_Custom_Language_Styles_for_Personalized_Communication_Systems.pdf" target="_blank">Paper</a>
+              <p class="impact">Proposed a statistical multi-method framework combining rule-based scoring and algorithmic ranking to integrate diverse decision signals into a coherent prioritization score for efficient re-ranking.</p>
             
-            
-              <a class="button" href="https://github.com/thisishardik/text-style-transfer" target="_blank">Code</a>
-            
-            
-            
-            
-            
+            <div class="paper-buttons">
+              
+                <a class="button" href="/assets/publications/DSCP_AIPCP_Paper_Final.pdf" target="_blank">Paper</a>
+              
+              
+                <a class="button" href="https://github.com/thisishardik/user-complaint-categorization/tree/master" target="_blank">Code</a>
+              
+              
+              
+              
+              
+            </div>
           </div>
         </div>
       
         <div class="paper">
-          <p class="title"><b>Using NLP Techniques for Enhancing Augmentative and Alternative Communication Applications</b></p>
-          <p><b>Hardik Srivastava</b></p>
-          <p><i>IJREAM'21: International Journal for Research in Engineering Application & Management (UGC)</i></p>
           
-            <p class="impact">NLP-based framework to enhance AAC applications, enabling dynamic vocabulary expansion and more expressive sentence generation.</p>
+            <div class="paper-diagram">
+              <img src="/assets/publications/diagrams/architecture.png" alt="Architecture Diagram" class="diagram-image">
+            </div>
           
-          <div class="paper-buttons">
+          <div class="paper-content">
+            <p class="title"><b>Neural Text Style Transfer with Custom Language Styles for Personalized Communication Systems</b></p>
+            <p><u><b>Hardik Srivastava</b></u>, Sneha Sunil, K. Shantha Kumari</p>
+            <p><i>ICKECS'22: International Conference on Knowledge Engineering and Communication Systems (IEEE)</i> <span class="year">(2022)</span></p>
             
-              <a class="button" href="/assets/publications/IJREAMV06I1070060.pdf" target="_blank">Paper</a>
+              <p class="impact">Introduced <b>StyleLM</b>, a style-conditioned neural text transfer model enabling fine-grained control over language style for personalized communication.</p>
             
-            
-            
-            
-            
-            
+            <div class="paper-buttons">
+              
+                <a class="button" href="assets/publications/Neural_Text_Style_Transfer_with_Custom_Language_Styles_for_Personalized_Communication_Systems.pdf" target="_blank">Paper</a>
+              
+              
+                <a class="button" href="https://github.com/thisishardik/text-style-transfer" target="_blank">Code</a>
+              
+              
+              
+              
+              
+            </div>
           </div>
         </div>
       
         <div class="paper">
-          <p class="title"><b>Decision Support Complaint Prioritization System using a Statistical Multi-Method Algorithmic approach</b></p>
-          <p><b>Hardik Srivastava</b>, Mayank Jha, T. Karthick</p>
-          <p><i>B.Tech Thesis, SRM 2023</i></p>
           
-            <p class="impact">Proposed a statistical multi-method framework combining rule-based scoring and algorithmic ranking to integrate diverse decision signals into a coherent prioritization score for efficient re-ranking.</p>
+            <div class="paper-diagram">
+              <img src="/assets/publications/diagrams/drd.jpg" alt="Architecture Diagram" class="diagram-image">
+            </div>
           
-          <div class="paper-buttons">
+          <div class="paper-content">
+            <p class="title"><b>Automatic Screening and Staging of Multi-Stage Diabetic Retinopathy using Deep Learning techniques</b></p>
+            <p><u><b>Hardik Srivastava</b></u>, T. Rajalakshmi</p>
+            <p><i>Preprint</i> <span class="year">(2022)</span></p>
             
-              <a class="button" href="/assets/publications/DSCP_AIPCP_Paper_Final.pdf" target="_blank">Paper</a>
+              <p class="impact">Proposed a deep learning framework for automated detection and staging of multi-stage diabetic retinopathy.</p>
             
-            
-              <a class="button" href="https://github.com/thisishardik/user-complaint-categorization/tree/master" target="_blank">Code</a>
-            
-            
-            
-            
-            
+            <div class="paper-buttons">
+              
+                <a class="button" href="/assets/publications/Diabetic_Retinopathy_Detection_Paper.pdf" target="_blank">Paper</a>
+              
+              
+              
+              
+              
+              
+            </div>
           </div>
         </div>
       
         <div class="paper">
-          <p class="title"><b>Automatic Screening and Staging of Multi-Stage Diabetic Retinopathy using Deep Learning techniques</b></p>
-          <p><b>Hardik Srivastava</b>, T. Rajalakshmi</p>
-          <p><i>Preprint 2022</i></p>
           
-            <p class="impact">Proposed a deep learning framework for automated detection and staging of multi-stage diabetic retinopathy.</p>
+            <div class="paper-diagram">
+              <img src="/assets/publications/diagrams/nlp_for_aac.jpeg" alt="Architecture Diagram" class="diagram-image">
+            </div>
           
-          <div class="paper-buttons">
+          <div class="paper-content">
+            <p class="title"><b>Using NLP Techniques for Enhancing Augmentative and Alternative Communication Applications</b></p>
+            <p><u><b>Hardik Srivastava</b></u></p>
+            <p><i>IJREAM: International Journal for Research in Engineering Application & Management (UGC)</i> <span class="year">(2021)</span></p>
             
-              <a class="button" href="/assets/publications/Diabetic_Retinopathy_Detection_Paper.pdf" target="_blank">Paper</a>
+              <p class="impact">NLP-based framework to enhance AAC applications, enabling dynamic vocabulary expansion and more expressive sentence generation.</p>
             
-            
-            
-            
-            
-            
+            <div class="paper-buttons">
+              
+                <a class="button" href="/assets/publications/IJREAMV06I1070060.pdf" target="_blank">Paper</a>
+              
+              
+              
+              
+              
+              
+            </div>
           </div>
         </div>
       
@@ -505,36 +538,50 @@
       
       
         <div class="paper">
-          <p class="title"><b>Multi-Modal Sentiment Analysis Using Text and Audio for Customer Support Centers</b></p>
-          <p><b>Hardik Srivastava</b>, Sneha Sunil, K. Shantha Kumari, P. Kanmani</p>
-          <p><i>ICACTCE'23: International Conference on Advances in Communication Technology and Computer Engineering (Springer)</i></p>
           
-            <p class="impact">Proposed CM-BERT, a novel multimodal sentiment analysis model that fuses textual and audio features to robustly capture customer sentiment</p>
+            <div class="paper-diagram">
+              <img src="/assets/publications/diagrams/archi-diag.drawio.png" alt="Architecture Diagram" class="diagram-image">
+            </div>
           
-          <div class="paper-buttons">
+          <div class="paper-content">
+            <p class="title"><b>Multi-Modal Sentiment Analysis Using Text and Audio for Customer Support Centers</b></p>
+            <p><u><b>Hardik Srivastava</b></u>, Sneha Sunil, K. Shantha Kumari, P. Kanmani</p>
+            <p><i>ICACTCE: International Conference on Advances in Communication Technology and Computer Engineering (Springer)</i> <span class="year">(2023)</span></p>
             
-              <a class="button" href="/assets/publications/MMSA_Paper_Springer_Nature_10_Final.pdf" target="_blank">Paper</a>
+              <p class="impact">Proposed <b>CM-BERT</b>, a novel multimodal sentiment analysis model that fuses textual and audio features to robustly capture customer sentiment</p>
             
-            
-              <a class="button" href="https://github.com/thisishardik/cmbert-sentiment-analysis" target="_blank">Code</a>
-            
+            <div class="paper-buttons">
+              
+                <a class="button" href="/assets/publications/MMSA_Paper_Springer_Nature_10_Final.pdf" target="_blank">Paper</a>
+              
+              
+                <a class="button" href="https://github.com/thisishardik/cmbert-sentiment-analysis" target="_blank">Code</a>
+              
+            </div>
           </div>
         </div>
       
         <div class="paper">
-          <p class="title"><b>Neural Text Style Transfer with Custom Language Styles for Personalized Communication Systems</b></p>
-          <p><b>Hardik Srivastava</b>, Sneha Sunil, K. Shantha Kumari</p>
-          <p><i>ICKECS'22: International Conference on Knowledge Engineering and Communication Systems (IEEE)</i></p>
           
-            <p class="impact">Introduced StyleLM, a style-conditioned neural text transfer model enabling fine-grained control over language style for personalized communication.</p>
+            <div class="paper-diagram">
+              <img src="/assets/publications/diagrams/architecture.png" alt="Architecture Diagram" class="diagram-image">
+            </div>
           
-          <div class="paper-buttons">
+          <div class="paper-content">
+            <p class="title"><b>Neural Text Style Transfer with Custom Language Styles for Personalized Communication Systems</b></p>
+            <p><u><b>Hardik Srivastava</b></u>, Sneha Sunil, K. Shantha Kumari</p>
+            <p><i>ICKECS'22: International Conference on Knowledge Engineering and Communication Systems (IEEE)</i> <span class="year">(2022)</span></p>
             
-              <a class="button" href="assets/publications/Neural_Text_Style_Transfer_with_Custom_Language_Styles_for_Personalized_Communication_Systems.pdf" target="_blank">Paper</a>
+              <p class="impact">Introduced <b>StyleLM</b>, a style-conditioned neural text transfer model enabling fine-grained control over language style for personalized communication.</p>
             
-            
-              <a class="button" href="https://github.com/thisishardik/text-style-transfer" target="_blank">Code</a>
-            
+            <div class="paper-buttons">
+              
+                <a class="button" href="assets/publications/Neural_Text_Style_Transfer_with_Custom_Language_Styles_for_Personalized_Communication_Systems.pdf" target="_blank">Paper</a>
+              
+              
+                <a class="button" href="https://github.com/thisishardik/text-style-transfer" target="_blank">Code</a>
+              
+            </div>
           </div>
         </div>
       
@@ -545,16 +592,23 @@
       
       
         <div class="paper">
-          <p class="title"><b>Using NLP Techniques for Enhancing Augmentative and Alternative Communication Applications</b></p>
-          <p><b>Hardik Srivastava</b></p>
-          <p><i>IJREAM'21: International Journal for Research in Engineering Application & Management (UGC)</i></p>
           
-            <p class="impact">NLP-based framework to enhance AAC applications, enabling dynamic vocabulary expansion and more expressive sentence generation.</p>
+            <div class="paper-diagram">
+              <img src="/assets/publications/diagrams/nlp_for_aac.jpeg" alt="Architecture Diagram" class="diagram-image">
+            </div>
           
-          <div class="paper-buttons">
+          <div class="paper-content">
+            <p class="title"><b>Using NLP Techniques for Enhancing Augmentative and Alternative Communication Applications</b></p>
+            <p><u><b>Hardik Srivastava</b></u></p>
+            <p><i>IJREAM: International Journal for Research in Engineering Application & Management (UGC)</i> <span class="year">(2021)</span></p>
             
-              <a class="button" href="/assets/publications/IJREAMV06I1070060.pdf" target="_blank">Paper</a>
+              <p class="impact">NLP-based framework to enhance AAC applications, enabling dynamic vocabulary expansion and more expressive sentence generation.</p>
             
+            <div class="paper-buttons">
+              
+                <a class="button" href="/assets/publications/IJREAMV06I1070060.pdf" target="_blank">Paper</a>
+              
+            </div>
           </div>
         </div>
       
@@ -565,19 +619,26 @@
       
       
         <div class="paper">
-          <p class="title"><b>Decision Support Complaint Prioritization System using a Statistical Multi-Method Algorithmic approach</b></p>
-          <p><b>Hardik Srivastava</b>, Mayank Jha, T. Karthick</p>
-          <p><i>B.Tech Thesis, SRM 2023</i></p>
           
-            <p class="impact">Proposed a statistical multi-method framework combining rule-based scoring and algorithmic ranking to integrate diverse decision signals into a coherent prioritization score for efficient re-ranking.</p>
+            <div class="paper-diagram">
+              <img src="/assets/publications/diagrams/model_dscp_paper.png" alt="Architecture Diagram" class="diagram-image">
+            </div>
           
-          <div class="paper-buttons">
+          <div class="paper-content">
+            <p class="title"><b>Decision Support Complaint Prioritization System using a Statistical Multi-Method Algorithmic approach</b></p>
+            <p><u><b>Hardik Srivastava</b></u>, Mayank Jha, T. Karthick</p>
+            <p><i>Undergraduate Thesis</i> <span class="year">(2023)</span></p>
             
-              <a class="button" href="/assets/publications/DSCP_AIPCP_Paper_Final.pdf" target="_blank">Paper</a>
+              <p class="impact">Proposed a statistical multi-method framework combining rule-based scoring and algorithmic ranking to integrate diverse decision signals into a coherent prioritization score for efficient re-ranking.</p>
             
-            
-              <a class="button" href="https://github.com/thisishardik/user-complaint-categorization/tree/master" target="_blank">Code</a>
-            
+            <div class="paper-buttons">
+              
+                <a class="button" href="/assets/publications/DSCP_AIPCP_Paper_Final.pdf" target="_blank">Paper</a>
+              
+              
+                <a class="button" href="https://github.com/thisishardik/user-complaint-categorization/tree/master" target="_blank">Code</a>
+              
+            </div>
           </div>
         </div>
       
@@ -588,16 +649,23 @@
       
       
         <div class="paper">
-          <p class="title"><b>Automatic Screening and Staging of Multi-Stage Diabetic Retinopathy using Deep Learning techniques</b></p>
-          <p><b>Hardik Srivastava</b>, T. Rajalakshmi</p>
-          <p><i>Preprint 2022</i></p>
           
-            <p class="impact">Proposed a deep learning framework for automated detection and staging of multi-stage diabetic retinopathy.</p>
+            <div class="paper-diagram">
+              <img src="/assets/publications/diagrams/drd.jpg" alt="Architecture Diagram" class="diagram-image">
+            </div>
           
-          <div class="paper-buttons">
+          <div class="paper-content">
+            <p class="title"><b>Automatic Screening and Staging of Multi-Stage Diabetic Retinopathy using Deep Learning techniques</b></p>
+            <p><u><b>Hardik Srivastava</b></u>, T. Rajalakshmi</p>
+            <p><i>Preprint</i> <span class="year">(2022)</span></p>
             
-              <a class="button" href="/assets/publications/Diabetic_Retinopathy_Detection_Paper.pdf" target="_blank">Preprint</a>
+              <p class="impact">Proposed a deep learning framework for automated detection and staging of multi-stage diabetic retinopathy.</p>
             
+            <div class="paper-buttons">
+              
+                <a class="button" href="/assets/publications/Diabetic_Retinopathy_Detection_Paper.pdf" target="_blank">Preprint</a>
+              
+            </div>
           </div>
         </div>
       
@@ -608,103 +676,138 @@
       
       
         <div class="paper">
-          <p class="title"><b>Automatic Screening and Staging of Multi-Stage Diabetic Retinopathy using Deep Learning techniques</b></p>
-          <p><b>Hardik Srivastava</b>, T. Rajalakshmi</p>
-          <p><i>Preprint 2022</i></p>
           
-            <p class="impact">Proposed a deep learning framework for automated detection and staging of multi-stage diabetic retinopathy.</p>
+            <div class="paper-diagram">
+              <img src="/assets/publications/diagrams/model_dscp_paper.png" alt="Architecture Diagram" class="diagram-image">
+            </div>
           
-          <div class="paper-buttons">
+          <div class="paper-content">
+            <p class="title"><b>Decision Support Complaint Prioritization System using a Statistical Multi-Method Algorithmic approach</b></p>
+            <p><u><b>Hardik Srivastava</b></u>, Mayank Jha, T. Karthick</p>
+            <p><i>Undergraduate Thesis</i> <span class="year">(2023)</span></p>
             
-              <a class="button" href="/assets/publications/Diabetic_Retinopathy_Detection_Paper.pdf" target="_blank">Paper</a>
+              <p class="impact">Proposed a statistical multi-method framework combining rule-based scoring and algorithmic ranking to integrate diverse decision signals into a coherent prioritization score for efficient re-ranking.</p>
             
-            
-            
-            
-            
-            
+            <div class="paper-buttons">
+              
+                <a class="button" href="/assets/publications/DSCP_AIPCP_Paper_Final.pdf" target="_blank">Paper</a>
+              
+              
+                <a class="button" href="https://github.com/thisishardik/user-complaint-categorization/tree/master" target="_blank">Code</a>
+              
+              
+              
+              
+              
+            </div>
           </div>
         </div>
       
         <div class="paper">
-          <p class="title"><b>Decision Support Complaint Prioritization System using a Statistical Multi-Method Algorithmic approach</b></p>
-          <p><b>Hardik Srivastava</b>, Mayank Jha, T. Karthick</p>
-          <p><i>B.Tech Thesis, SRM 2023</i></p>
           
-            <p class="impact">Proposed a statistical multi-method framework combining rule-based scoring and algorithmic ranking to integrate diverse decision signals into a coherent prioritization score for efficient re-ranking.</p>
+            <div class="paper-diagram">
+              <img src="/assets/publications/diagrams/archi-diag.drawio.png" alt="Architecture Diagram" class="diagram-image">
+            </div>
           
-          <div class="paper-buttons">
+          <div class="paper-content">
+            <p class="title"><b>Multi-Modal Sentiment Analysis Using Text and Audio for Customer Support Centers</b></p>
+            <p><u><b>Hardik Srivastava</b></u>, Sneha Sunil, K. Shantha Kumari, P. Kanmani</p>
+            <p><i>ICACTCE: International Conference on Advances in Communication Technology and Computer Engineering (Springer)</i> <span class="year">(2023)</span></p>
             
-              <a class="button" href="/assets/publications/DSCP_AIPCP_Paper_Final.pdf" target="_blank">Paper</a>
+              <p class="impact">Proposed <b>CM-BERT</b>, a novel multimodal sentiment analysis model that fuses textual and audio features to robustly capture customer sentiment</p>
             
-            
-              <a class="button" href="https://github.com/thisishardik/user-complaint-categorization/tree/master" target="_blank">Code</a>
-            
-            
-            
-            
-            
+            <div class="paper-buttons">
+              
+                <a class="button" href="/assets/publications/MMSA_Paper_Springer_Nature_10_Final.pdf" target="_blank">Paper</a>
+              
+              
+                <a class="button" href="https://github.com/thisishardik/cmbert-sentiment-analysis" target="_blank">Code</a>
+              
+              
+              
+              
+              
+            </div>
           </div>
         </div>
       
         <div class="paper">
-          <p class="title"><b>Using NLP Techniques for Enhancing Augmentative and Alternative Communication Applications</b></p>
-          <p><b>Hardik Srivastava</b></p>
-          <p><i>IJREAM'21: International Journal for Research in Engineering Application & Management (UGC)</i></p>
           
-            <p class="impact">NLP-based framework to enhance AAC applications, enabling dynamic vocabulary expansion and more expressive sentence generation.</p>
+            <div class="paper-diagram">
+              <img src="/assets/publications/diagrams/drd.jpg" alt="Architecture Diagram" class="diagram-image">
+            </div>
           
-          <div class="paper-buttons">
+          <div class="paper-content">
+            <p class="title"><b>Automatic Screening and Staging of Multi-Stage Diabetic Retinopathy using Deep Learning techniques</b></p>
+            <p><u><b>Hardik Srivastava</b></u>, T. Rajalakshmi</p>
+            <p><i>Preprint</i> <span class="year">(2022)</span></p>
             
-              <a class="button" href="/assets/publications/IJREAMV06I1070060.pdf" target="_blank">Paper</a>
+              <p class="impact">Proposed a deep learning framework for automated detection and staging of multi-stage diabetic retinopathy.</p>
             
-            
-            
-            
-            
-            
+            <div class="paper-buttons">
+              
+                <a class="button" href="/assets/publications/Diabetic_Retinopathy_Detection_Paper.pdf" target="_blank">Paper</a>
+              
+              
+              
+              
+              
+              
+            </div>
           </div>
         </div>
       
         <div class="paper">
-          <p class="title"><b>Neural Text Style Transfer with Custom Language Styles for Personalized Communication Systems</b></p>
-          <p><b>Hardik Srivastava</b>, Sneha Sunil, K. Shantha Kumari</p>
-          <p><i>ICKECS'22: International Conference on Knowledge Engineering and Communication Systems (IEEE)</i></p>
           
-            <p class="impact">Introduced StyleLM, a style-conditioned neural text transfer model enabling fine-grained control over language style for personalized communication.</p>
+            <div class="paper-diagram">
+              <img src="/assets/publications/diagrams/architecture.png" alt="Architecture Diagram" class="diagram-image">
+            </div>
           
-          <div class="paper-buttons">
+          <div class="paper-content">
+            <p class="title"><b>Neural Text Style Transfer with Custom Language Styles for Personalized Communication Systems</b></p>
+            <p><u><b>Hardik Srivastava</b></u>, Sneha Sunil, K. Shantha Kumari</p>
+            <p><i>ICKECS'22: International Conference on Knowledge Engineering and Communication Systems (IEEE)</i> <span class="year">(2022)</span></p>
             
-              <a class="button" href="assets/publications/Neural_Text_Style_Transfer_with_Custom_Language_Styles_for_Personalized_Communication_Systems.pdf" target="_blank">Paper</a>
+              <p class="impact">Introduced <b>StyleLM</b>, a style-conditioned neural text transfer model enabling fine-grained control over language style for personalized communication.</p>
             
-            
-              <a class="button" href="https://github.com/thisishardik/text-style-transfer" target="_blank">Code</a>
-            
-            
-            
-            
-            
+            <div class="paper-buttons">
+              
+                <a class="button" href="assets/publications/Neural_Text_Style_Transfer_with_Custom_Language_Styles_for_Personalized_Communication_Systems.pdf" target="_blank">Paper</a>
+              
+              
+                <a class="button" href="https://github.com/thisishardik/text-style-transfer" target="_blank">Code</a>
+              
+              
+              
+              
+              
+            </div>
           </div>
         </div>
       
         <div class="paper">
-          <p class="title"><b>Multi-Modal Sentiment Analysis Using Text and Audio for Customer Support Centers</b></p>
-          <p><b>Hardik Srivastava</b>, Sneha Sunil, K. Shantha Kumari, P. Kanmani</p>
-          <p><i>ICACTCE'23: International Conference on Advances in Communication Technology and Computer Engineering (Springer)</i></p>
           
-            <p class="impact">Proposed CM-BERT, a novel multimodal sentiment analysis model that fuses textual and audio features to robustly capture customer sentiment</p>
+            <div class="paper-diagram">
+              <img src="/assets/publications/diagrams/nlp_for_aac.jpeg" alt="Architecture Diagram" class="diagram-image">
+            </div>
           
-          <div class="paper-buttons">
+          <div class="paper-content">
+            <p class="title"><b>Using NLP Techniques for Enhancing Augmentative and Alternative Communication Applications</b></p>
+            <p><u><b>Hardik Srivastava</b></u></p>
+            <p><i>IJREAM: International Journal for Research in Engineering Application & Management (UGC)</i> <span class="year">(2021)</span></p>
             
-              <a class="button" href="/assets/publications/MMSA_Paper_Springer_Nature_10_Final.pdf" target="_blank">Paper</a>
+              <p class="impact">NLP-based framework to enhance AAC applications, enabling dynamic vocabulary expansion and more expressive sentence generation.</p>
             
-            
-              <a class="button" href="https://github.com/thisishardik/cmbert-sentiment-analysis" target="_blank">Code</a>
-            
-            
-            
-            
-            
+            <div class="paper-buttons">
+              
+                <a class="button" href="/assets/publications/IJREAMV06I1070060.pdf" target="_blank">Paper</a>
+              
+              
+              
+              
+              
+              
+            </div>
           </div>
         </div>
       
@@ -931,7 +1034,7 @@
                         <span class="flag">University of Washington</span>
                         <span class="time-wrapper"><span class="time">September 2025 - Present</span></span>
                     </div>
-                    <div class="desc"><b>Graduate Research Assistant</b> <br/> Privacy-Preserving Text Generation in LLMs</div>
+                    <div class="desc"><b>Graduate Research Assistant</b> <br/> Optimizing LLM Alignment and Interpretability</div>
                 </div>
         </li>
         
