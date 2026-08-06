@@ -2,7 +2,7 @@ papers:
   - title: "Multi-Modal Sentiment Analysis Using Text and Audio for Customer Support Centers"
     authors: "<u><b>Hardik Srivastava</b></u>, Sneha Sunil, K. Shantha Kumari, P. Kanmani"
     year: 2023
-    venue: "ICACTCE: International Conference on Advances in Communication Technology and Computer Engineering (Springer)"
+    venue: "ICACTCE: International Conference on Advances in Communication Technology and Computer Engineering (Springer Nature)"
     impact: "Proposed <b>CM-BERT</b>, a novel multimodal sentiment analysis model that fuses textual and audio features to robustly capture customer sentiment"
     paper_pdf: "/assets/publications/MMSA_Paper_Springer_Nature_10_Final.pdf"
     code: "https://github.com/thisishardik/cmbert-sentiment-analysis"
